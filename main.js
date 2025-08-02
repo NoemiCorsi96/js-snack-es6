@@ -77,3 +77,33 @@ const squadre = [
     falli: 0
   }
 ]
+
+
+//in questo modo sto ciclando dentro l'array e vado a cambiare le proprietà degli oggetti 
+for (let i = 0; i < squadre.length; i++){
+    let punti_fatti = getRandomInt(0, 10);
+    let falli_subiti = getRandomInt(0, 15);
+    squadre[i].punti = punti_fatti;
+    squadre[i].falli = falli_subiti;
+}
+console.log(squadre);
+
+//creare un nuovo array che contenga solo nomi e falli
+const squadreNuovo = [];
+for (let i = 0; i < squadre.length; i++){
+    const thisSquadra = squadre[i];
+    const newSquadra = {
+        nome: thisSquadra.nome,
+        falli: thisSquadra.falli
+    }
+    squadreNuovo.push(newSquadra)
+}
+console.log(squadreNuovo);
+
+
+//per creare i numeri random, utilizzo la funzione già fatta per farlo 
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
