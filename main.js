@@ -57,23 +57,23 @@ Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subit
 
 const squadre = [
   {
-    name: 'Juventus',
-    points: 0,
-    fouls: 0
+    nome: 'Juventus',
+    punti: 0,
+    falli: 0
   },
-  {
-    name: 'Inter',
-    points: 0,
-    fouls: 0
+   {
+    nome: 'Fiorentina',
+    punti: 0,
+    falli: 0
   },
-  {
-    name: 'Milan',
-    points: 0,
-    fouls: 0
+   {
+    nome: 'Milan',
+    punti: 0,
+    falli: 0
   },
-  {
-    name: 'Fiorentina',
-    points: 0,
-    fouls: 0
+   {
+    nome: 'Inter',
+    punti: 0,
+    falli: 0
   }
 ]
