@@ -14,7 +14,7 @@ const biciclette = [
     },
     {
         nome: 'bici_2',
-        peso: 5
+        peso: 5.4
         
     },
     {
@@ -24,7 +24,7 @@ const biciclette = [
     },
     {
         nome: 'bici_4',
-        peso: 2
+        peso: 2.4
         
     }
 ]
