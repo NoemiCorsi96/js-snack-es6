@@ -29,6 +29,23 @@ const biciclette = [
     }
 ]
 
+//io so quale è la più leggera e posso vederla così:
+
+const bici_leggera = biciclette[3];
+console.log(bici_leggera);
+
+//devo poterla trovare in modo DINAMICO 
+let biciclettaLeggera = biciclette[0];
+
+for (let i = 0; i < biciclette.length; i++){
+    const thisBike = biciclette[i];
+    if (thisBike.peso < biciclettaLeggera.peso) {
+        biciclettaLeggera = thisBike;
+    }
+}
+console.log(biciclettaLeggera);
+
+
 
 /*Snack2
 Creare un array di oggetti di squadre di calcio.
